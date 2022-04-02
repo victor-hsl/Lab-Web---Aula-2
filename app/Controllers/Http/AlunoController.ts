@@ -2,6 +2,7 @@ import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
 export default class AlunoController {
   public async index(ctx: HttpContextContract) {
+    console.log(ctx)
     return [
       {
         id: 1,
@@ -14,6 +15,7 @@ export default class AlunoController {
     ]
   }
   public async store(ctx: HttpContextContract){
+    console.log(ctx)
     return [
       {
         success: 'sucesso',
