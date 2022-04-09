@@ -18,7 +18,7 @@ export default class AlunoController {
     console.log(ctx)
     return [
       {
-        success: ctx.request.body
+        ...ctx.request.body()
       },
     ]
   }
